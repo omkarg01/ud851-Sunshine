@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         textView = findViewById(R.id.tv_weather_data);
 
         // TODO (3) Create an array of Srings that contain fake weather data
-        String[] weatherData = {"Weather1", "Weather2","Weather3","Weather4","Weather5"};
+        String[] weatherData = {"Weather1", "Weather2","Weather3","Weather4","Weather5","Weather1", "Weather2","Weather3","Weather4","Weather5","Weather1", "Weather2","Weather3","Weather4","Weather5",};
 
         // TODO (4) Append each String from the fake weather data array to the TextView
         for (String each:weatherData) {
