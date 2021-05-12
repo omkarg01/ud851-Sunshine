@@ -110,6 +110,7 @@ public class MainActivity extends AppCompatActivity implements ForecastAdapterOn
         new FetchWeatherTask().execute(location);
     }
 
+
     /**
      * This method is overridden by our MainActivity class in order to handle RecyclerView item
      * clicks.
