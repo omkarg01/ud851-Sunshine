@@ -220,9 +220,22 @@ public class MainActivity extends AppCompatActivity implements ForecastAdapterOn
             loadWeatherData();
             return true;
         }
+        else if (id == R.id.map){
+            showMap();
+            return true;
+        }
 
         // TODO (2) Launch the map when the map menu item is clicked
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void showMap() {
+        Uri.Builder uriBuilder = new Uri.Builder();
+        uriBuilder.scheme("geo").path("0,0").appendQueryParameter("q", "Dubai");
+        Uri uri = uriBuilder.build();
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, uri);
+
+        startActivity(mapIntent);
     }
 }
